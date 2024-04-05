@@ -1,4 +1,4 @@
-#   Scoop Super Search v6.2.1 2024.04.05
+#   Scoop Super Search v6.2.2 2024.04.05
 #   (C) 2024 Oscar Lopez
 #   For more information visit: https://github.com/okibcn/ss"
 
@@ -29,7 +29,7 @@ function ss {
         }
     }
     if (($oHelp) -OR (!$oRaw)) {
-        Write-Host " Scoop Super Search v6.2.1 2024.04.05
+        Write-Host " Scoop Super Search v6.2.2 2024.04.05
  (C) 2024 Oscar Lopez
  ss -h for help. For more information visit: https://github.com/okibcn/ss"
     }
