@@ -133,7 +133,7 @@ function ss {
     $cAutoupdate = "$([char]27)[32m"  # Green
     $hLocalBuckets = @{}
     $bucketsPath = if ( test-path "$PSScriptRoot/../../../buckets" ) {"$PSScriptRoot/../../../buckets"} else {"~/scoop/buckets"}
-    gci "$bucketsPath/*" | % { $hLocalBuckets.add((gc "$_/.git/config" | Select-String "(?<=url *= *)http.*(?= *$)").Matches.Value, $_.Name) }
+    gci "$bucketsPath/*" | % { $hLocalBuckets.add((gc "$_/.git/config" | Select-String "(?<=url *= *)*(?= *$)").Matches.Value, $_.Name) }
     $pattern | % {
         $pattern_ = $_
         Foreach ($line in $table) {
