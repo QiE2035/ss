@@ -77,7 +77,7 @@ function ss {
 
     # PREFILTER USING SWISS-CHEESE METHOD
     if ($oLast) {
-        $csv = if ($oldPS) { $csv | Select-String "QiE2035/ScoopMaster" } else { $csv | Select-String "QiE2035/ScoopMaster" -raw }
+        $csv = if ($oldPS) { $csv | Select-String "okibcn/ScoopMaster" } else { $csv | Select-String "okibcn/ScoopMaster" -raw }
     }
     if ($oOfficial) {
         $csv = if ($oldPS) { $csv | Select-String "Scoopinstaller/" } else { $csv | Select-String '"Scoopinstaller/' -raw }
