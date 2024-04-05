@@ -29,8 +29,8 @@ function ss {
         }
     }
     if (($oHelp) -OR (!$oRaw)) {
-        Write-Host " Scoop Super Search v6.2 2023.02.28
- (C) 2023 Oscar Lopez
+        Write-Host " Scoop Super Search v6.2.1 2024.04.05
+ (C) 2024 Oscar Lopez
  ss -h for help. For more information visit: https://github.com/okibcn/ss"
     }
     if (($oHelp) -OR ($pattern.count -eq 0)) {
